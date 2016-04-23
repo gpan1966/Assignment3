@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ent-Xn-vUM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Swipe_Right.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-0Y-D6j">
+                                <rect key="frame" x="40" y="66" width="294" height="288"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJY-go-ohx">
+                                <rect key="frame" x="95" y="583" width="185" height="30"/>
+                                <color key="backgroundColor" red="0.47049144939999998" green="0.72580492649999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Display Table View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTableView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrK-fA-bYX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36333522972163002" green="0.60999049530684735" blue="0.70712500810623169" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zJY-go-ohx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oie-oJ-17U"/>
+                            <constraint firstItem="yWS-0Y-D6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="flS-OQ-tWZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zKq-7z-gjk" appends="YES" id="zhP-bo-Xdo"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="SFv-SW-BJD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="swipeControl" destination="zKq-7z-gjk" id="pA1-F3-cjx"/>
+                        <segue destination="FOi-aO-lHl" kind="presentation" identifier="Seg2" id="nLO-bW-GVd"/>
+                        <segue destination="BgT-7v-BjX" kind="push" identifier="Seg3" id="h9d-Of-r07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zKq-7z-gjk"/>
+            </objects>
+            <point key="canvasLocation" x="1089.5" y="306.5"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="BTb-v5-3H9">
+            <objects>
+                <viewController id="FOi-aO-lHl" customClass="ViewController2" customModule="Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZ6-hO-OeK"/>
+                        <viewControllerLayoutGuide type="bottom" id="YrW-OX-8u8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qXz-KN-Rwr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Earth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fTB-mz-e8C">
+                                <rect key="frame" x="7" y="28" width="361" height="236"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01K-YR-SKs">
+                                <rect key="frame" x="71" y="506" width="233" height="30"/>
+                                <color key="backgroundColor" red="0.47049144939999998" green="0.72580492649999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDismiss:" destination="FOi-aO-lHl" eventType="touchUpInside" id="vst-WA-CCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="01K-YR-SKs" firstAttribute="centerX" secondItem="qXz-KN-Rwr" secondAttribute="centerX" id="CVj-c3-6BA"/>
+                            <constraint firstItem="fTB-mz-e8C" firstAttribute="centerX" secondItem="qXz-KN-Rwr" secondAttribute="centerX" id="Ttl-xY-XQQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23X-cu-5DN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.5" y="-9.5"/>
+        </scene>
+        <!--Table View-->
+        <scene sceneID="JSd-jK-hss">
+            <objects>
+                <viewController id="BgT-7v-BjX" customClass="TableView" customModule="Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HvB-UY-mbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yfq-cF-dS3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ULT-Vu-uaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1iG-Rw-Gzs">
+                                <rect key="frame" x="0.0" y="28" width="375" height="612"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.47049144939999998" green="0.72580492649999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BgT-7v-BjX" id="ysR-KW-J6L"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yfq-cF-dS3" firstAttribute="top" secondItem="1iG-Rw-Gzs" secondAttribute="bottom" constant="27" id="H2L-JG-Mng"/>
+                            <constraint firstItem="1iG-Rw-Gzs" firstAttribute="centerY" secondItem="ULT-Vu-uaQ" secondAttribute="centerY" id="H9y-6b-xdi"/>
+                            <constraint firstAttribute="trailing" secondItem="1iG-Rw-Gzs" secondAttribute="trailing" id="I3O-Ui-oln"/>
+                            <constraint firstItem="1iG-Rw-Gzs" firstAttribute="leading" secondItem="ULT-Vu-uaQ" secondAttribute="leading" id="XxL-e8-yCa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sTV-TD-Cxe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXZ-pn-qOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.5" y="740.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="piH-Q4-rk4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ent-Xn-vUM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsM-dm-R6t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mRv-k1-Khi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvr-wL-tbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earth.jpg" width="1280" height="720"/>
+        <image name="Swipe_Right.png" width="512" height="512"/>
+    </resources>
+</document>
